@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <title>Lobe Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--navbar-->
+     <nav class="navbar">
+                <div class="logo">
+                    <a href="#">lobe</a>
+                    <img src="image/Logo.png" alt="Lobe" aria-hidden="true"    width="35" height="35";>
+                  </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>     
+                <a href="#">
+                    <button class="btn">Download</button>
+                </a>
+               <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+               
+               
+                
+                  <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><button class="btn">Download</button></li>
+                    </ul>
+                  </div>                  
+    </nav>
+
+     <!--header-->
+      <header>
+        <div class="header-container">
+            <h1>Lobe <span>Tour</span> </h1>
+            <h3>Build your first machine learning model in ten
+                minutes. No code or experience required.
+            </h3>
+        </div>
+      </header>
+
+      <!--main-->
+      <main>
+        <section class="section-img">
+            <div>
+                <img src="image/lobe.png" alt="" width="1000" >
+            </div>
+        </section>
+
+
+        <section class="section-container">
+             <div class="contains">
+                <h1>Train your app 
+                    with Lobe  </h1>
+                    <a href="#">
+                        <button class="btn">Download</button>
+                    </a>
+             </div>
+        </section>
+      </main>
+     
+       <!--footer-->
+
+       <footer>
+        <div class="footer">
+            <div class="footer-col">
+                <h4>lobe  <img src="image/Logo.png" alt="Lobe" aria-hidden="true"    width="35" height="35";></h4>
+                <p>A product by Microsoft.
+                    All rights reserved.
+                    &copy Microsoft 2021
+                </p>
+               </div>
+    
+               <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+               </div>
+    
+               <div class="footer-col">
+                <h4>General</h4>
+                <ul>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Press Inquiry</a></li>
+                    <li><a href="#">Press Images</a></li>
+                </ul>
+               </div>
+    
+               <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+               </div>
+    
+               <div class="footer-col">
+               <div class="links">
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+               </div>
+               </div>
+        </div>
+         
+       </footer>
+
+
+
+
+
+
+    <script>
+        const toggleBtn=document.querySelector('.toggle_btn')
+        const toggleBtnIcon=document.querySelector('.toggle_btn i')
+        const dropdownMenu=document.querySelector('.dropdown-menu')
+        toggleBtn.onclick =function(){
+            dropdownMenu.classList.toggle('open')
+            const isOpen =dropdownMenu.classList.contains('open')
+      
+            toggleBtnIcon.classList=isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
